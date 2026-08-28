@@ -1,0 +1,14 @@
+▲ Next.js 16.3.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.10:3000
+- Environments: .env
+✓ Ready in 304ms
+✓ Running next.config.mjs took 10ms
+
+ GET / 200 in 286ms (next.js: 133ms, application-code: 153ms)
+ GET / 200 in 62ms (next.js: 7ms, application-code: 56ms)
+prisma:query SELECT `main`.`CodeSnippet`.`id`, `main`.`CodeSnippet`.`shareId`, `main`.`CodeSnippet`.`code`, `main`.`CodeSnippet`.`language`, `main`.`CodeSnippet`.`theme`, `main`.`CodeSnippet`.`createdAt`, `main`.`CodeSnippet`.`updatedAt` FROM `main`.`CodeSnippet` WHERE (`main`.`CodeSnippet`.`shareId` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`CodeSnippet` (`id`, `shareId`, `code`, `language`, `theme`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?) RETURNING `id` AS `id`, `shareId` AS `shareId`, `code` AS `code`, `language` AS `language`, `theme` AS `theme`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ POST /api/snippets 201 in 646ms (next.js: 59ms, application-code: 587ms)
+prisma:query SELECT `main`.`CodeSnippet`.`id`, `main`.`CodeSnippet`.`shareId`, `main`.`CodeSnippet`.`code`, `main`.`CodeSnippet`.`language`, `main`.`CodeSnippet`.`theme`, `main`.`CodeSnippet`.`createdAt`, `main`.`CodeSnippet`.`updatedAt` FROM `main`.`CodeSnippet` WHERE (`main`.`CodeSnippet`.`shareId` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /api/snippets/7685ba70 200 in 758ms (next.js: 751ms, application-code: 7ms)
