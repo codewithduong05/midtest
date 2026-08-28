@@ -1,1 +1,4 @@
 .DS_Store
+test2/code-sharing-app/node_modules
+
+test2/code-sharing-app/next-env.d.ts
